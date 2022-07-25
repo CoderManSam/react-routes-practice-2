@@ -22,6 +22,9 @@ function ProductsPage(props) {
                 Pass the product data as state in the link, just
                 like we are doing for the view product link above
               */}
+              <Link to={`/products/${product.id}/edit`} state={{ product }}>
+                Edit Product
+              </Link>
             </li>
           );
         })}
